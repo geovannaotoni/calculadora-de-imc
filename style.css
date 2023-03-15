@@ -2,3 +2,120 @@
 https://webflow.com/templates/html/magnetic-coming-soon-website-template
 https://webflow.com/templates/html/escape-blog-website-template
 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-image: url('./fitness-de-estilo-de-vida-ativo-e-retrato-de-conceito-de-bem-estar-de-uma-linda-garota-asiatica-indecisa-e-tentadora-t.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+
+}
+
+header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(226, 55, 55);
+  font-size: 50px;
+}
+
+article {
+  font-size: 20px;
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 100px;
+}
+
+h3 {
+  text-align: center;
+  margin: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+input {
+  border: 1px solid rgb(47, 46, 46);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(226, 55, 55);
+  color: white;
+  font-size: 18px;
+}
+
+#result {
+  font-size: 20px;
+  margin: 50px auto;
+  background-color: rgba(226, 55, 55, 0.401);
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+table , th, td {
+  border: 1px solid rgb(226, 55, 55);
+  font-size: 20px;
+  text-align: center;
+  /* border-collapse: collapse; */
+}
+
+th {
+  background-color: rgb(226, 55, 55);
+  color: white;
+
+}
+
+td {
+  width: 200px;
+  height: 30px;
+  padding: 3px;
+}
+
+#table-result {
+  display: flex;
+  justify-content: center;
+}
+
+#input-dados {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: rgba(226, 55, 55, 0.401);
+  margin-top: 35px;
+}

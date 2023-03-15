@@ -2,7 +2,7 @@ const height = document.getElementById('height');
 const weight = document.getElementById('weight');
 const btnCalculate = document.getElementById('calculate');
 const btnClear = document.getElementById('clear');
-const strong = document.getElementsByTagName('strong')[0];
+const strong = document.getElementById('answer');
 
 btnCalculate.addEventListener('click', () => {
   const imc = weight.value / ((height.value / 100) ** 2)

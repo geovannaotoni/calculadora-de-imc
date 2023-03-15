@@ -6,32 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de IMC</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/66/66236.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Cálculo do IMC</h1>
-    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
-    <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
-    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+    <article>
+      <p>IMC é a sigla para <strong>Índice de Massa Corpórea</strong>, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+      <p><strong>Quer descobrir seu IMC?</strong> Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela.</p>
+      <p>O índice é calculado da seguinte maneira: <strong>divide-se o peso do paciente pela sua altura elevada ao quadrado</strong>. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+    </article>
   </header>
   <main>
-    <section>
+    <h3>Descubra aqui o seu IMC!</h3>
+    <section id="input-dados">
       <label for="height">Altura (em cm)</label>
       <input type="number" id="height" min="0" max="300" placeholder="0">
 
       <label for="weight">Peso (em kg)</label>
       <input type="number" id="weight" min="0" max="300" placeholder="0">
-
+    </section>
+    
+    <section id="buttons">
       <button id="calculate">Calcular</button>
       <button id="clear">Limpar</button>
-
     </section>
 
-    <section>
-      <p>Seu IMC é: <strong>0</strong></p>
+    <section id="result">
+      <p>Seu IMC é: <strong id="answer">0</strong></p>
     </section>
 
-    <section>
+    <section id="table-result">
       <table>
         <caption>Consulte o resultado</caption>
         <tr>

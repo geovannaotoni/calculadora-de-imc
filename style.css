@@ -29,13 +29,14 @@ header h1 {
   text-align: center;
   margin-top: 50px;
   color: rgb(226, 55, 55);
-  font-size: 50px;
+  font-size: 70px;
 }
 
 article {
-  font-size: 20px;
+  font-size: 30px;
   width: 50%;
-  margin-left: 50px;
+  max-height: 90vh;
+  margin-left: 100px;
   margin-top: 80px;
   text-align: center;
   display: flex;
@@ -44,40 +45,54 @@ article {
   gap: 100px;
 }
 
+main {
+  height: 90vh;
+}
+
 h3 {
   text-align: center;
-  margin: 50px;
+  margin: 60px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 input {
   border: 1px solid rgb(47, 46, 46);
   padding: 5px;
   border-radius: 5px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
 }
 
 button {
   cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   background-color: rgb(226, 55, 55);
   color: white;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 #result {
-  font-size: 20px;
+  font-size: 35px;
   margin: 50px auto;
   background-color: rgba(226, 55, 55, 0.401);
   width: fit-content;
   padding: 20px;
   border-radius: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 table , th, td {
   border: 1px solid rgb(226, 55, 55);
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   /* border-collapse: collapse; */
 }
@@ -85,13 +100,12 @@ table , th, td {
 th {
   background-color: rgb(226, 55, 55);
   color: white;
-
 }
 
 td {
-  width: 200px;
-  height: 30px;
-  padding: 3px;
+  width: 300px;
+  height: 40px;
+  padding: 5px;
 }
 
 #table-result {
@@ -103,19 +117,14 @@ td {
   display: flex;
   justify-content: center;
   gap: 5px;
-  font-size: 20px;
-}
-
-#buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 20px;
+  font-size: 25px;
 }
 
 footer {
   text-align: center;
   padding: 25px;
   background-color: rgba(226, 55, 55, 0.401);
-  margin-top: 35px;
+  font-size: 30px;
+  position: absolute;
+  width: 100%;
 }

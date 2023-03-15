@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cálculo do IMC</h1>
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+  </header>
+  <main>
+    <section>
+      <label for="height">Altura (em cm)</label>
+      <input type="number" id="height" min="0" max="300" placeholder="0">
+
+      <label for="weight">Peso (em kg)</label>
+      <input type="number" id="weight" min="0" max="300" placeholder="0">
+
+      <button id="calculate">Calcular</button>
+      <button id="clear">Limpar</button>
+
+    </section>
+
+    <section>
+      <p>Seu IMC é: <strong>0</strong></p>
+    </section>
+
+    <section>
+      <table>
+        <caption>Consulte o resultado</caption>
+        <tr>
+          <th>IMC</th>
+          <th>Classificação</th>
+        </tr>
+        <tr>
+          <td>Menor que 18,5</td>
+          <td>Magreza</td>
+        </tr>
+        <tr>
+          <td>Entre 18,5 e 24,9</td>
+          <td>Normal</td>
+        </tr>
+        <tr>
+          <td>Entre 25,0 e 29,9</td>
+          <td>Sobrepeso</td>
+        </tr>
+        <tr>
+          <td>Entre 30,0 e 39,9</td>
+          <td>Obesidade</td>
+        </tr>
+        <tr>
+          <td>Maior que 40,0</td>
+          <td>Obesidade Grave</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+  <footer>
+    <p>Feito por Geovanna Otoni</p>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
